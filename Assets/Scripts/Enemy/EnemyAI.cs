@@ -25,7 +25,7 @@ public class EnemyAI : MonoBehaviour
         if (health.IsDead())
         {
             enabled = false;
-            navMeshAgent.enabled = false;
+            
         }
 
         distanceToTarget = Vector3.Distance(target.position, transform.position);
@@ -72,7 +72,7 @@ public class EnemyAI : MonoBehaviour
         }
         catch 
         {
-            Debug.Log("Error!");
+            navMeshAgent.enabled = false;
         }      
     }
 
