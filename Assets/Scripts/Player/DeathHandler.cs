@@ -11,6 +11,8 @@ public class DeathHandler : MonoBehaviour
         gameOverCanvas.enabled = false;
     }
 
+
+
     public void HandleDeath()
     {
         gameOverCanvas.enabled = true;
